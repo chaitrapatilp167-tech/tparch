@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Projects in your Stackly workspace.">
+  <title>Projects — Stackly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-app">
+    <aside class="dashboard-sidebar">
+      <a class="dashboard-brand" href="index.html"><img src="stackly_.webp" alt="Stackly"></a>
+      <span class="dashboard-sidebar-label">Workspace</span>
+      <nav class="dashboard-nav" aria-label="Dashboard navigation">
+        <a href="dashboard.html"><span>◫</span>Overview</a>
+        <a class="selected" href="dashboard-projects.html"><span>⌂</span>Projects</a>
+        <a href="dashboard-notes.html"><span>◷</span>Studio notes</a>
+        <a href="dashboard-files.html"><span>▤</span>Shared files</a>
+      </nav>
+      <div class="dashboard-sidebar-bottom"><span class="dashboard-sidebar-label">Need a hand?</span><a href="mailto:hello@stackly.edu">Contact the studio ↗</a></div>
+    </aside>
+    <div class="dashboard-content">
+      <header class="dashboard-topbar"><span data-dashboard-role>Client workspace</span><span class="dashboard-user-email" data-dashboard-email></span><a href="login.html" aria-label="Sign out" class="dashboard-signout">Sign out <span>↗</span></a></header>
+      <main class="dashboard-main">
+        <section data-dashboard-view="client">
+          <div class="dashboard-welcome"><div><div class="eyebrow">Your workspace</div><h1>Projects</h1><p>Follow the work, see what’s taking shape, and know what comes next.</p></div><a class="dashboard-action" href="mailto:hello@stackly.edu?subject=Project%20question">Ask the studio <span>↗</span></a></div>
+          <article class="workspace-feature"><div class="workspace-feature-image" role="img" aria-label="Warm contemporary home surrounded by trees"></div><div class="workspace-feature-copy"><div class="dashboard-card-top"><span>Current project · Residential</span><span class="status-pill">In progress</span></div><h2>Willow Creek House</h2><p class="dashboard-project-meta">Salem, Tamil Nadu · Began August 2026</p><p>A calm, light-filled family home shaped around the garden, the morning sun, and everyday life.</p><div class="dashboard-progress-heading"><span>Design development</span><span>65%</span></div><div class="dashboard-progress"><span></span></div><div class="dashboard-project-footer"><span>Next milestone</span><strong>Design review · 24 Oct</strong></div></div></article>
+          <div class="workspace-section-heading"><div><span class="dashboard-card-kicker">Project journey</span><h2>Where we are</h2></div><p>Each stage brings the important decisions into focus.</p></div>
+          <div class="workspace-stage-grid"><article class="is-complete"><span>01</span><h3>Discover</h3><p>Brief, site understanding, and shared priorities.</p><small>Completed · Aug 2026</small></article><article class="is-current"><span>02</span><h3>Design</h3><p>Plans, materials, and the character of each space.</p><small>In progress · Review 24 Oct</small></article><article><span>03</span><h3>Develop</h3><p>Detailed drawings and coordinated selections.</p><small>Coming next</small></article><article><span>04</span><h3>Build</h3><p>Construction support through to the final detail.</p><small>Planned</small></article></div>
+        </section>
+        <section data-dashboard-view="admin" hidden>
+          <div class="dashboard-welcome"><div><div class="eyebrow">Studio workspace</div><h1>Projects</h1><p>Active work, project stage, and the next client milestone.</p></div><a class="dashboard-action" href="contact.html">New inquiry <span>↗</span></a></div>
+          <section class="dashboard-panel admin-project-panel"><div class="dashboard-panel-heading"><div><span class="dashboard-card-kicker">Active portfolio</span><h2>Project pipeline</h2></div><span class="status-pill">4 active</span></div><div class="admin-table-wrap"><table class="admin-project-table"><thead><tr><th>Project</th><th>Client</th><th>Stage</th><th>Next milestone</th><th>Status</th></tr></thead><tbody><tr><td><strong>Willow Creek House</strong><small>Residential · Salem</small></td><td>Jamie Morgan</td><td>Design development</td><td>Design review · 24 Oct</td><td><span class="status-pill">On track</span></td></tr><tr><td><strong>Garden House</strong><small>Residential · Amagansett</small></td><td>Alex Rivera</td><td>Concept design</td><td>Concept review · 28 Oct</td><td><span class="status-pill">On track</span></td></tr><tr><td><strong>The Fieldhouse</strong><small>Hospitality · Hudson</small></td><td>Taylor Chen</td><td>Construction</td><td>Site visit · 30 Oct</td><td><span class="status-pill status-review">In review</span></td></tr><tr><td><strong>Park Slope Residence</strong><small>Interiors · Brooklyn</small></td><td>Casey Ellis</td><td>Interior detailing</td><td>Finish approval · 02 Nov</td><td><span class="status-pill">On track</span></td></tr></tbody></table></div></section>
+          <div class="workspace-stage-grid admin-project-cards"><article><span>THIS WEEK</span><h3>3 client milestones</h3><p>Keep reviews, approvals, and site coordination moving.</p></article><article><span>IN DESIGN</span><h3>2 projects</h3><p>Willow Creek House and Garden House.</p></article><article><span>ON SITE</span><h3>1 project</h3><p>The Fieldhouse · Site visit scheduled 30 Oct.</p></article><article><span>INTERIORS</span><h3>1 project</h3><p>Park Slope Residence · Finishes in review.</p></article></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

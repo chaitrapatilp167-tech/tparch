@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The page you are looking for could not be found.">
+  <title>Page not found — Stackly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="not-found-page">
+  <div class="site-loader" role="status" aria-label="Loading Stackly"><span class="site-loader-ring site-loader-ring-outer"></span><span class="site-loader-ring site-loader-ring-inner"></span><img src="stackly_.webp" alt=""></div>
+  <script>(()=>{const loader=document.querySelector('.site-loader');let hidden=false;const hide=()=>{if(hidden||!loader)return;hidden=true;loader.classList.add('is-hidden');window.setTimeout(()=>loader.remove(),300)};if(document.readyState==='complete')window.setTimeout(hide,250);else window.addEventListener('load',()=>window.setTimeout(hide,250),{once:true});window.setTimeout(hide,1800)})()</script>
+  <main class="not-found-main">
+    <section aria-labelledby="not-found-title">
+      <div class="eyebrow">Error · 404</div>
+      <h1 id="not-found-title">Page not found.</h1>
+      <p>The page you were looking for isn’t here. Let’s get you back to the studio.</p>
+      <div class="not-found-actions">
+        <button class="text-link" id="previous-page" type="button">Previous page <span>↖</span></button>
+        <a class="text-link" href="index.html">Return home <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelector('#previous-page').addEventListener('click', () => {
+      if (history.length > 1) history.back();
+      else window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

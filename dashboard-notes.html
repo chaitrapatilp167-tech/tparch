@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Studio updates and notes for your Stackly projects.">
+  <title>Studio notes — Stackly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-app">
+    <aside class="dashboard-sidebar">
+      <a class="dashboard-brand" href="index.html"><img src="stackly_.webp" alt="Stackly"></a>
+      <span class="dashboard-sidebar-label">Workspace</span>
+      <nav class="dashboard-nav" aria-label="Dashboard navigation">
+        <a href="dashboard.html"><span>◫</span>Overview</a>
+        <a href="dashboard-projects.html"><span>⌂</span>Projects</a>
+        <a class="selected" href="dashboard-notes.html"><span>◷</span>Studio notes</a>
+        <a href="dashboard-files.html"><span>▤</span>Shared files</a>
+      </nav>
+      <div class="dashboard-sidebar-bottom"><span class="dashboard-sidebar-label">Need a hand?</span><a href="mailto:hello@stackly.edu">Contact the studio ↗</a></div>
+    </aside>
+    <div class="dashboard-content">
+      <header class="dashboard-topbar"><span data-dashboard-role>Client workspace</span><span class="dashboard-user-email" data-dashboard-email></span><a href="login.html" aria-label="Sign out" class="dashboard-signout">Sign out <span>↗</span></a></header>
+      <main class="dashboard-main">
+        <section data-dashboard-view="client">
+          <div class="dashboard-welcome"><div><div class="eyebrow">Project journal</div><h1>Studio notes</h1><p>Decisions, progress, and small details from the work in motion.</p></div><a class="dashboard-action" href="mailto:hello@stackly.edu?subject=Question%20about%20an%20update">Ask a question <span>↗</span></a></div>
+          <div class="notes-layout"><div class="notes-feed">
+            <article class="note-card note-card-featured"><div class="note-card-head"><span class="dashboard-card-kicker">Design development · Willow Creek House</span><time datetime="2026-10-18">18 October 2026</time></div><h2>Plan revisions are ready to review</h2><p>We’ve refined the kitchen connection and adjusted the east-facing windows to bring in more morning light. The revised plan keeps the garden visible from the shared living spaces while giving the quiet rooms a little more privacy.</p><div class="note-tags"><span>Plans updated</span><span>Client review</span></div></article>
+            <article class="note-card"><div class="note-card-head"><span class="dashboard-card-kicker">Materials · Willow Creek House</span><time datetime="2026-10-12">12 October 2026</time></div><h2>Material samples are on their way</h2><p>We’ve requested timber and stone samples for the next review. We’re comparing a warm oak finish with locally sourced stone so the palette feels grounded and easy to live with.</p><div class="note-tags"><span>Materials</span><span>In progress</span></div></article>
+            <article class="note-card"><div class="note-card-head"><span class="dashboard-card-kicker">Project kickoff · Willow Creek House</span><time datetime="2026-08-22">22 August 2026</time></div><h2>A shared direction for the home</h2><p>We gathered your priorities for flexible family spaces, gentle morning light, and a strong connection to the garden. These ideas are guiding the first round of plans.</p><div class="note-tags"><span>Brief</span><span>Completed</span></div></article>
+          </div><aside class="notes-aside"><span class="dashboard-card-kicker">At a glance</span><h2>Willow Creek House</h2><p class="dashboard-project-meta">Residential · Salem, Tamil Nadu</p><div class="notes-aside-row"><span>Current stage</span><strong>Design development</strong></div><div class="notes-aside-row"><span>Next review</span><strong>24 October 2026</strong></div><a href="dashboard-projects.html">View project details ↗</a></aside></div>
+        </section>
+        <section data-dashboard-view="admin" hidden>
+          <div class="dashboard-welcome"><div><div class="eyebrow">Team updates</div><h1>Studio notes</h1><p>Recent project communication and decisions across the studio.</p></div><a class="dashboard-action" href="mailto:hello@stackly.edu?subject=Studio%20update">Draft an update <span>↗</span></a></div>
+          <div class="notes-admin-summary"><article><span>CLIENT UPDATES</span><strong>08</strong><small>Shared this month</small></article><article><span>WAITING FOR REVIEW</span><strong>03</strong><small>Across active projects</small></article><article><span>RECENTLY UPDATED</span><strong>18 Oct</strong><small>Willow Creek House</small></article></div>
+          <section class="dashboard-panel"><div class="dashboard-panel-heading"><div><span class="dashboard-card-kicker">Recent activity</span><h2>Project updates</h2></div><span class="dashboard-date">October 2026</span></div>
+            <article class="admin-note-row"><span class="update-dot"></span><div><div class="note-card-head"><strong>Willow Creek House</strong><time datetime="2026-10-18">18 Oct</time></div><h3>Plan revisions are ready to review</h3><p>Updated kitchen connection and east-facing windows. Client review scheduled for 24 October.</p></div><span class="status-pill status-review">Needs review</span></article>
+            <article class="admin-note-row"><span class="update-dot"></span><div><div class="note-card-head"><strong>Garden House</strong><time datetime="2026-10-16">16 Oct</time></div><h3>Concept options prepared</h3><p>Two massing directions ready for the client conversation on 28 October.</p></div><span class="status-pill">Shared</span></article>
+            <article class="admin-note-row"><span class="update-dot muted"></span><div><div class="note-card-head"><strong>The Fieldhouse</strong><time datetime="2026-10-14">14 Oct</time></div><h3>Site coordination notes added</h3><p>Contractor questions and the next inspection items are recorded in the project library.</p></div><span class="status-pill">Complete</span></article>
+            <article class="admin-note-row"><span class="update-dot muted"></span><div><div class="note-card-head"><strong>Park Slope Residence</strong><time datetime="2026-10-10">10 Oct</time></div><h3>Finish samples sent for approval</h3><p>Stone and timber selections are with the client for review.</p></div><span class="status-pill status-review">Awaiting reply</span></article>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
